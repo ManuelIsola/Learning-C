@@ -1,0 +1,33 @@
+Tipos de dados C
+Tipos de dados
+Conforme explicado no capítulo Variáveis , uma variável em C deve ser um tipo de dados especificado e você deve usar um especificador de formato dentro da printf()função para exibi-la:
+
+Exemplo
+// Create variables
+int myNum = 5;             // Integer (whole number)
+float myFloatNum = 5.99;   // Floating point number
+char myLetter = 'D';       // Character
+
+// Print variables
+printf("%d\n", myNum);
+printf("%f\n", myFloatNum);
+printf("%c\n", myLetter);
+Tipos de dados básicos
+O tipo de dados especifica o tamanho e o tipo de informação que a variável armazenará.
+
+Neste tutorial, vamos nos concentrar nos mais básicos:
+
+Data Type	Size	Description	Example
+int	2 or 4 bytes	Stores whole numbers, without decimals	1
+float	4 bytes	Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits	1.99
+double	8 bytes	Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits	1.99
+char	1 byte	Stores a single character/letter/number, or ASCII values	'A'
+Especificadores de formato básico
+Existem diferentes especificadores de formato para cada tipo de dados. Aqui estão alguns deles:
+
+Format Specifier	Data Type	Try it
+%d or %i	int	
+%f or %F	float	
+%lf	double	
+%c	char	
+%s	Used for strings (text), which you will learn more about in a later chapter

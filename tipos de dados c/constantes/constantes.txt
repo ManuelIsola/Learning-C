@@ -1,0 +1,32 @@
+Constantes C
+Constantes
+Se não quiser que outras pessoas (ou você mesmo) alterem os valores das variáveis ​​existentes, você pode usar a constpalavra-chave.
+
+Isto irá declarar a variável como "constante", o que significa imutável e somente leitura :
+
+Exemplo
+const int myNum = 15;  // myNum will always be 15
+myNum = 10;  // error: assignment of read-only variable 'myNum'
+Você deve sempre declarar a variável como constante quando tiver valores que provavelmente não serão alterados:
+
+Exemplo
+const int minutesPerHour = 60;
+const float PI = 3.14;
+Notas sobre constantes
+Quando você declara uma variável constante, ela deve receber um valor:
+
+Exemplo
+Assim:
+
+const int minutesPerHour = 60;
+Isso, no entanto, não funcionará :
+
+const int minutesPerHour;
+minutesPerHour = 60; // error
+Boa prática
+Outra coisa sobre variáveis ​​constantes é que é considerada uma boa prática declará-las com letras maiúsculas.
+
+Não é obrigatório, mas é útil para facilitar a leitura do código e é comum para programadores C:
+
+Exemplo
+const int BIRTHYEAR = 1980;

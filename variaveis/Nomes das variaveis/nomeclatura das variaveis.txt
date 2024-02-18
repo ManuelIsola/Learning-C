@@ -1,0 +1,23 @@
+Nomes de variáveis ​​C (identificadores)
+Nomes de variáveis ​​C
+Todas as variáveis ​​C devem ser identificadas com nomes exclusivos .
+
+Esses nomes exclusivos são chamados de identificadores .
+
+Os identificadores podem ser nomes curtos (como x e y) ou nomes mais descritivos (idade, soma, totalVolume).
+
+Nota: Recomenda-se usar nomes descritivos para criar um código compreensível e de fácil manutenção:
+
+Exemplo
+// Good variable name
+int minutesPerHour = 60;
+
+// OK, but not so easy to understand what m actually is
+int m = 60;
+As regras gerais para nomear variáveis ​​são:
+
+Os nomes podem conter letras, dígitos e sublinhados
+Os nomes devem começar com uma letra ou sublinhado (_)
+Os nomes diferenciam maiúsculas de minúsculas ( myVare myvarsão variáveis ​​diferentes)
+Os nomes não podem conter espaços em branco ou caracteres especiais como!, #,%, etc.
+Palavras reservadas (como int) não podem ser usadas como nomes

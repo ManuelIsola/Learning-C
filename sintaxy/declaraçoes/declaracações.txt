@@ -1,0 +1,30 @@
+Declarações
+Um programa de computador é uma lista de “instruções” a serem “executadas” por um computador.
+
+Em uma linguagem de programação, essas instruções de programação são chamadas de instruções .
+
+A instrução a seguir "instrui" o compilador a imprimir o texto "Eu serei um programador de Excelência!" na tela:
+
+exemplo:
+printf("Eu serei um programador de Excelência!");
+
+É importante terminar a declaração com ponto e vírgula;
+
+Se você esquecer o ponto e vírgula ( ;), ocorrerá um erro e o programa não será executado:
+
+Exemplo
+printf("Eu serei um programador de Excelência!")
+error: expected ';' before 'return'
+
+Muitas declarações
+A maioria dos programas C contém muitas instruções.
+
+As instruções são executadas, uma por uma, na mesma ordem em que são escritas:
+Exemplo
+printf("Hello World!");
+printf("Have a good day!");
+return 0;
+
+A primeira instrução é executada primeiro (imprima "Hello World!" na tela).
+Em seguida, a segunda instrução é executada (imprima “Tenha um bom dia!” na tela).
+E por fim, a terceira instrução é executada (encerrar o programa C com sucesso).

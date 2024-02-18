@@ -1,0 +1,40 @@
+Variáveis ​​C
+Variáveis ​​são contêineres para armazenar valores de dados, como números e caracteres.
+
+Em C, existem diferentes tipos de variáveis ​​(definidas com diferentes palavras-chave), por exemplo:
+
+int- armazena inteiros (números inteiros), sem decimais, como 123ou-123
+float- armazena números de ponto flutuante, com decimais, como 19.99ou-19.99
+char- armazena caracteres únicos, como 'a'ou 'B'. Os caracteres são cercados por aspas simples
+Declarando (criando) variáveis
+Para criar uma variável, especifique o tipo e atribua um valor a ela :
+
+Sintaxe
+type variableName = value;
+Onde type é um dos tipos C (como int) e variableName é o nome da variável (como x ou myName ). O sinal de igual é usado para atribuir um valor à variável.
+
+Então, para criar uma variável que deve armazenar um número , veja o exemplo a seguir:
+
+Exemplo
+Crie uma variável chamada myNum do tipo inte atribua o valor 15 a ela:
+
+int myNum = 15;
+Você também pode declarar uma variável sem atribuir o valor e atribuir o valor posteriormente:
+
+Exemplo
+// Declare a variable
+int myNum;
+
+// Assign a value to the variable
+myNum = 15;
+Variáveis ​​de saída
+Você aprendeu no capítulo de saída que pode gerar valores/imprimir texto com a printf()função:
+
+Exemplo
+printf("Hello World!");
+Em muitas outras linguagens de programação (como Python , Java e C++ ), você normalmente usaria uma função de impressão para exibir o valor de uma variável. No entanto, isso não é possível em C:
+
+Exemplo
+int myNum = 15;
+printf(myNum);  // Nothing happens
+Para gerar variáveis ​​em C, você deve se familiarizar com algo chamado " especificadores de formato ", sobre o qual aprenderemos no próximo capítulo.

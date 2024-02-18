@@ -1,0 +1,1 @@
+Crie uma variável chamada myNume atribua o valor 50a ela.

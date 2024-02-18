@@ -1,0 +1,91 @@
+Conversão de tipo C
+Conversão de tipo
+Às vezes, você precisa converter o valor de um tipo de dados em outro tipo. Isso é conhecido como conversão de tipo .
+
+Por exemplo, se você tentar dividir dois números inteiros 5por 2, você esperaria que o resultado fosse 2.5. Mas como estamos trabalhando com números inteiros (e não com valores de ponto flutuante), o exemplo a seguir produzirá apenas 2:
+
+Exemplo
+int x = 5;
+int y = 2;
+int sum = 5 / 2;
+
+printf("%d", sum); // Outputs 2
+Para obter o resultado correto, você precisa saber como funciona a conversão de tipo .
+
+Existem dois tipos de conversão em C:
+
+Conversão Implícita (automaticamente)
+Conversão explícita (manualmente)
+Conversão Implícita
+A conversão implícita é feita automaticamente pelo compilador quando você atribui um valor de um tipo a outro.
+
+Por exemplo, se você atribuir um intvalor a um floattipo:
+
+Exemplo
+// Automatic conversion: int to float
+float myFloat = 9;
+
+printf("%f", myFloat); // 9.000000
+Como você pode ver, o compilador converte automaticamente o valor int 9em um valor float de 9.000000.
+
+Isto pode ser arriscado, pois você pode perder o controle sobre valores específicos em determinadas situações.
+
+Especialmente se fosse o contrário - o exemplo a seguir converte automaticamente o valor float 9.99em um valor int de 9:
+
+Exemplo
+// Automatic conversion: float to int
+int myInt = 9.99;
+
+printf("%d", myInt); // 9
+O que aconteceu com .99? Podemos querer esses dados em nosso programa! Por isso tem cuidado. É importante que você saiba como funciona o compilador nessas situações, para evitar resultados inesperados.
+
+Como outro exemplo, se você dividir dois números inteiros: 5por 2, você sabe que a soma é 2.5. E como você sabe desde o início desta página, se você armazenar a soma como um número inteiro, o resultado exibirá apenas o número 2. Portanto, seria melhor armazenar a soma como a floatou a double, certo?
+
+Exemplo
+float sum = 5 / 2;
+
+printf("%f", sum); // 2.000000
+Por que o resultado é 2.00000e não 2.5? Bem, é porque 5 e 2 ainda são números inteiros na divisão. Nesse caso, você precisa converter manualmente os valores inteiros em valores de ponto flutuante. (Veja abaixo).
+
+Conversão Explícita
+A conversão explícita é feita manualmente colocando o tipo entre parênteses () na frente do valor.
+
+Considerando nosso problema do exemplo acima, agora podemos obter o resultado correto:
+
+Exemplo
+// Manual conversion: int to float
+float sum = (float) 5 / 2;
+
+printf("%f", sum); // 2.500000
+Você também pode colocar o tipo na frente de uma variável:
+
+Exemplo
+int num1 = 5;
+int num2 = 2;
+float sum = (float) num1 / num2;
+
+printf("%f", sum); // 2.500000
+E como você aprendeu sobre "precisão decimal" no capítulo anterior, você poderia deixar a saída ainda mais limpa removendo os zeros extras (se desejar):
+
+Exemplo
+int num1 = 5;
+int num2 = 2;
+float sum = (float) num1 / num2;
+
+printf("%.1f", sum); // 2.5
+Exemplo da vida real
+Aqui está um exemplo real de tipos de dados e conversão de tipos onde criamos um programa para calcular a porcentagem da pontuação de um usuário em relação à pontuação máxima em um jogo:
+
+Exemplo
+// Set the maximum possible score in the game to 500
+int maxScore = 500;
+
+// The actual score of the user
+int userScore = 420;
+
+/* Calculate the percantage of the user's score in relation to the maximum available score.
+Convert userScore to float to make sure that the division is accurate */
+float percentage = (float) userScore / maxScore * 100.0;
+
+// Print the percentage
+printf("User's percentage is %.2f", percentage);

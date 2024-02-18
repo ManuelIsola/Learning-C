@@ -1,0 +1,33 @@
+Comentários em C
+Os comentários podem ser usados ​​para explicar o código e torná-lo mais legível. Também pode ser usado para impedir a execução ao testar código alternativo.
+
+Os comentários podem ser de linhas simples ou múltiplas .
+
+Comentários de linha única
+Comentários de linha única começam com duas barras ( //).
+
+Qualquer texto entre //e o final da linha é ignorado pelo compilador (não será executado).
+
+Este exemplo usa um comentário de linha única antes de uma linha de código:
+
+Exemplo
+// This is a comment
+printf("Hello World!");
+Este exemplo usa um comentário de linha única no final de uma linha de código:
+
+Exemplo
+printf("Hello World!"); // This is a comment
+C Comentários multilinhas
+Comentários de várias linhas começam /*e terminam com */.
+
+Qualquer texto entre /*e */será ignorado pelo compilador:
+
+Exemplo
+/* The code below will print the words Hello World!
+to the screen, and it is amazing */
+printf("Hello World!");
+Comentários de uma ou várias linhas?
+Depende de você qual deseja usar. Normalmente usamos //para comentários curtos e /* */mais longos.
+
+É bom saber: antes da versão C99 (lançada em 1999), você só podia usar comentários de múltiplas linhas em C.
+

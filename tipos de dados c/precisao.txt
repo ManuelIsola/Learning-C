@@ -1,0 +1,19 @@
+Precisão decimal C
+Definir precisão decimal
+Você provavelmente já percebeu que se imprimir um número de ponto flutuante, a saída mostrará muitos dígitos após a vírgula decimal:
+
+Exemplo
+float myFloatNum = 3.5;
+double myDoubleNum = 19.99;
+
+printf("%f\n", myFloatNum); // Outputs 3.500000
+printf("%lf", myDoubleNum); // Outputs 19.990000
+Se quiser remover os zeros extras (definir a precisão decimal), você pode usar um ponto ( .) seguido de um número que especifica quantos dígitos devem ser mostrados após a vírgula decimal:
+
+Exemplo
+float myFloatNum = 3.5;
+
+printf("%f\n", myFloatNum);   // Default will show 6 digits after the decimal point
+printf("%.1f\n", myFloatNum); // Only show 1 digit
+printf("%.2f\n", myFloatNum); // Only show 2 digits
+printf("%.4f", myFloatNum);   // Only show 4 digits

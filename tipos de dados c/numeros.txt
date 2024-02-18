@@ -1,0 +1,26 @@
+Tipos de dados numéricos C
+Tipos Numéricos
+Use intquando precisar armazenar um número inteiro sem decimais, como 35 ou 1000, e floatou doublequando precisar de um número de ponto flutuante (com decimais), como 9,99 ou 3,14515.
+
+interno
+int myNum = 1000;
+printf("%d", myNum);
+flutuador
+float myNum = 5.75;
+printf("%f", myNum);
+dobro
+double myNum = 19.99;
+printf("%lf", myNum);
+floatvs.double
+
+A precisão de um valor de ponto flutuante indica quantos dígitos o valor pode ter após a vírgula decimal. A precisão de floaté de seis ou sete dígitos decimais, enquanto doubleas variáveis ​​têm uma precisão de cerca de 15 dígitos. Portanto, geralmente é mais seguro usá-lo doublepara a maioria dos cálculos - mas observe que ele ocupa o dobro da memória (float 8 bytes versus 4 bytes).
+
+Números Científicos
+Um número de ponto flutuante também pode ser um número científico com um “e” para indicar a potência de 10:
+
+Exemplo
+float f1 = 35e3;
+double d1 = 12E4;
+
+printf("%f\n", f1);
+printf("%lf", d1);

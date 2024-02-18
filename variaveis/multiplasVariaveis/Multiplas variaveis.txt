@@ -1,0 +1,13 @@
+C Declarar Múltiplas Variáveis
+Declarar múltiplas variáveis
+Para declarar mais de uma variável do mesmo tipo, use uma lista separada por vírgulas :
+
+Exemplo
+int x = 5, y = 6, z = 50;
+printf("%d", x + y + z);
+Você também pode atribuir o mesmo valor a diversas variáveis ​​do mesmo tipo:
+
+Exemplo
+int x, y, z;
+x = y = z = 50;
+printf("%d", x + y + z);

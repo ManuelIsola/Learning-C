@@ -1,0 +1,30 @@
+Você já viu o código a seguir algumas vezes nos primeiros capítulos. Vamos decompô-lo para entender melhor:
+
+#include<stdio.h>
+
+int main(void)
+{
+    printf("Esta é a sintaxy de c");
+    return (0);
+}
+
+Exemplo explicado
+Linha 3: #include <stdio.h> é uma biblioteca de arquivos de cabeçalho que nos permite trabalhar com funções de entrada e saída, como printf()(usado na linha 6).
+Arquivos de cabeçalho adicionam funcionalidade aos programas C.
+
+Linha 4: Uma linha em branco. C ignora o espaço em branco. Mas usamos isso para tornar o código mais legível.
+
+Linha 5: Outra coisa que sempre aparece em um programa em C é main(). Isso é chamado de função . Qualquer código entre chaves {}será executado.
+
+Linha 4: printf() é uma função usada para enviar/imprimir texto na tela. Em nosso exemplo, a saída será "Esta é a sintaxy de c"
+
+Linha 5: return 0 finaliza a main()função.
+
+Linha 6: Não se esqueça de adicionar a chave de fechamento }para realmente encerrar a função principal.
+
+Observe que: Toda instrução C termina com ponto e vírgula;
+
+Nota: O corpo de int main()também pode ser escrito como:
+int main(){printf("Hello World!");return 0;}
+
+Lembre-se: o compilador ignora espaços em branco. No entanto, múltiplas linhas tornam o código mais legível.

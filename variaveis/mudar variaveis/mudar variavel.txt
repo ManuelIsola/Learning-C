@@ -1,0 +1,41 @@
+Valores da variável C
+Alterar valores de variáveis
+Se você atribuir um novo valor a uma variável existente, ele substituirá o valor anterior:
+
+Exemplo
+int myNum = 15;  // myNum is 15
+myNum = 10;  // Now myNum is 10
+Você também pode atribuir o valor de uma variável a outra:
+
+Exemplo
+int myNum = 15;
+
+int myOtherNum = 23;
+
+// Assign the value of myOtherNum (23) to myNum
+myNum = myOtherNum;
+
+// myNum is now 23, instead of 15
+printf("%d", myNum);
+Ou copie valores para variáveis ​​vazias:
+
+Exemplo
+// Create a variable and assign the value 15 to it
+int myNum = 15;
+
+// Declare a variable without assigning it a value
+int myOtherNum;
+
+// Assign the value of myNum to myOtherNum
+myOtherNum = myNum;
+
+// myOtherNum now has 15 as a value
+printf("%d", myOtherNum);
+Adicionar variáveis ​​juntas
+Para adicionar uma variável a outra variável, você pode usar o + operador:
+
+Exemplo
+int x = 5;
+int y = 6;
+int sum = x + y;
+printf("%d", sum);

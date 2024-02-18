@@ -1,0 +1,33 @@
+Exemplo da vida real
+Freqüentemente, em nossos exemplos, simplificamos os nomes das variáveis ​​para corresponder ao seu tipo de dados (myInt ou myNum para inttipos, myChar para chartipos e assim por diante). Isso é feito para evitar confusão.
+
+Porém, se você quiser um exemplo real de como variáveis ​​​​podem ser utilizadas, dê uma olhada no seguinte, onde fizemos um programa que armazena diversos dados de um estudante universitário:
+
+Exemplo
+// Student data
+int studentID = 15;
+int studentAge = 23;
+float studentFee = 75.25;
+char studentGrade = 'B';
+
+// Print variables
+printf("Student id: %d\n", studentID);
+printf("Student age: %d\n", studentAge);
+printf("Student fee: %f\n", studentFee);
+printf("Student grade: %c", studentGrade);
+Calcular a área de um retângulo
+Neste exemplo da vida real, criamos um programa para calcular a área de um retângulo (multiplicando o comprimento e a largura):
+
+Exemplo
+// Create integer variables
+int length = 4;
+int width = 6;
+int area;
+
+// Calculate the area of a rectangle
+area = length * width;
+
+// Print the variables
+printf("Length is: %d\n", length);
+printf("Width is: %d\n", width);
+printf("Area of the rectangle is: %d", area);

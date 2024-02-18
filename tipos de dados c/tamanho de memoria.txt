@@ -1,0 +1,30 @@
+C O operador sizeof
+Obtenha o tamanho da memória
+Introduzimos no capítulo sobre tipos de dados que o tamanho da memória de uma variável varia dependendo do tipo:
+
+Data Type	Size
+int	2 or 4 bytes
+float	4 bytes
+double	8 bytes
+char	1 byte
+O tamanho da memória refere-se a quanto espaço um tipo ocupa na memória do computador .
+
+Para realmente obter o tamanho (em bytes) de um tipo de dados ou variável, use o sizeofoperador:
+
+Exemplo
+int myInt;
+float myFloat;
+double myDouble;
+char myChar;
+
+printf("%lu\n", sizeof(myInt));
+printf("%lu\n", sizeof(myFloat));
+printf("%lu\n", sizeof(myDouble));
+printf("%lu\n", sizeof(myChar));
+Observe que usamos o %luformato específico para imprimir o resultado, em vez de %d. É porque o compilador espera que o operador sizeof retorne um long unsigned int( %lu), em vez de int( %d). Em alguns computadores pode funcionar com %d, mas é mais seguro usar %lu.
+
+Por que devo saber o tamanho dos tipos de dados?
+Usar o tipo de dados correto para a finalidade correta economizará memória e melhorará o desempenho do seu programa.
+
+Você aprenderá mais sobre o sizeofoperador posteriormente neste tutorial e como usá-lo em diferentes cenários.
+

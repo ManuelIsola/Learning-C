@@ -1,0 +1,31 @@
+Saída (imprimir texto)
+Para gerar valores ou imprimir texto em C, você pode usar a printf() função:
+
+exemplo:
+#include <stdio.h>
+
+int main(void)
+{    
+    printf("Hello World");
+    return(0);
+}
+Aspas duplas
+Ao trabalhar com texto, ele deve ser colocado entre aspas duplas "".
+
+Se você esquecer as aspas duplas, ocorrerá um erro:
+Exemplo
+printf("This sentence will work!");
+printf(This sentence will produce an error.);
+
+Muitas printffunções
+Você pode usar quantas printf()funções quiser. Porém , observe que ele não insere uma nova linha no final da saída:
+
+Exemplo
+#include <stdio.h>
+
+int main() {
+  printf("Hello World!");
+  printf("I am learning C.");
+  printf("And it is awesome!");
+  return 0;
+}

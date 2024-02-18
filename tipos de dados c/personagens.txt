@@ -1,0 +1,32 @@
+Tipos de dados de caracteres C
+O tipo de caractere
+O chartipo de dados é usado para armazenar um único caractere.
+
+O caractere deve estar entre aspas simples, como 'A' ou 'c', e usamos o %cespecificador de formato para imprimi-lo:
+
+Exemplo
+char myGrade = 'A';
+printf("%c", myGrade);
+Alternativamente, se você estiver familiarizado com ASCII, poderá usar valores ASCII para exibir determinados caracteres. Observe que esses valores não estão entre aspas ( ''), pois são números:
+
+Exemplo
+char a = 65, b = 66, c = 67;
+printf("%c", a);
+printf("%c", b);
+printf("%c", c);
+Dica: Uma lista de todos os valores ASCII pode ser encontrada em nossa Referência de tabela ASCII .
+
+Notas sobre personagens
+Se você tentar armazenar mais de um caractere, apenas o último caractere será impresso:
+
+Exemplo
+char myText = 'Hello';
+printf("%c", myText);
+Nota: Não utilize o chartipo para armazenar vários caracteres, pois pode produzir erros.
+
+Para armazenar vários caracteres (ou palavras inteiras), use strings (sobre as quais você aprenderá mais em um capítulo posterior):
+
+Exemplo
+char myText[] = "Hello";
+printf("%s", myText);
+Por enquanto, saiba apenas que usamos strings para armazenar vários caracteres/texto e o tipo char para caracteres únicos.
