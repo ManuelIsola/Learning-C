@@ -1,0 +1,1 @@
+Este exemplo mostra como você pode usar if..elsepara "abrir uma porta" se o usuário inserir o código correto

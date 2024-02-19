@@ -1,0 +1,43 @@
+C Se... Senão
+Condições e declarações If
+Você já aprendeu que C suporta as condições lógicas usuais da matemática:
+
+Menor que: a <b
+Menor ou igual a: a <= b
+Maior que: a > b
+Maior ou igual a: a >= b
+Igual a a == b
+Diferente de: a! = b
+Você pode usar essas condições para executar diferentes ações para diferentes decisões.
+
+C tem as seguintes declarações condicionais:
+
+Use ifpara especificar um bloco de código a ser executado, se uma condição especificada for true
+Use elsepara especificar um bloco de código a ser executado, se a mesma condição for false
+Use else ifpara especificar uma nova condição a ser testada, se a primeira condição for false
+Use switchpara especificar muitos blocos alternativos de código a serem executados
+A declaração se
+Use a ifinstrução para especificar um bloco de código a ser executado se uma condição for true.
+
+Sintaxe
+if (condition) {
+  // block of code to be executed if the condition is true
+}
+Observe que ifestá em letras minúsculas. Letras maiúsculas (If ou IF) gerarão um erro.
+
+No exemplo abaixo, testamos dois valores para descobrir se 20 é maior que 18. Se a condição for true, imprima algum texto:
+
+Exemplo
+if (20 > 18) {
+  printf("20 is greater than 18");
+}
+Também podemos testar variáveis:
+
+Exemplo
+int x = 20;
+int y = 18;
+if (x > y) {
+  printf("x is greater than y");
+}
+Exemplo explicado
+No exemplo acima usamos duas variáveis, x e y , para testar se x é maior que y (usando o >operador). Como x é 20 e y é 18, e sabemos que 20 é maior que 18, imprimimos na tela que “x é maior que y”.

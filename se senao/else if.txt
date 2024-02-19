@@ -1,0 +1,29 @@
+A instrução else if
+Use a else ifinstrução para especificar uma nova condição se a primeira condição for false.
+
+Sintaxe
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if the condition1 is false and condition2 is false
+}
+Exemplo
+    int time;
+    time = 22;
+    if(time < 12)
+    {
+        printf("Bom dia!");
+    }
+    else if (time >= 12 && time <=17)
+    {
+        printf("Boa tarde!");
+    }
+    else
+    {
+        printf("Boa noite!");
+    }
+// Outputs "Boa noite."
+Exemplo explicado
+No exemplo acima, o tempo (22) é maior que 10, então a primeira condição é false. A próxima condição, na else ifinstrução, também é false, então passamos para a else condição já que condição1 e condição2 são ambas false- e imprimimos na tela “Boa noite”.

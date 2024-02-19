@@ -1,0 +1,1 @@
+Este exemplo mostra como você pode usar if..else para descobrir se um número é positivo ou negativo
